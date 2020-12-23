@@ -1,0 +1,19 @@
+$orange-color: darkorange;
+
+h1 {
+  color: $orange-color;
+  margin: 0;
+}
+
+button {
+  background-color: $orange-color;
+  color: white;
+  border: none;
+  padding: 8px;
+  transition: background-color 200ms ease-in-out;
+
+  &:hover {
+    background-color: adjust-color($color: $orange-color, $lightness: -5%);
+  }
+}
+
