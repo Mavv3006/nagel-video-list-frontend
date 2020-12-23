@@ -1,0 +1,24 @@
+$orange-color: darkorange;
+
+h2 {
+    color: $orange-color;
+    margin-bottom: 0;
+}
+
+.dance-list {
+    display: inline-flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: flex-start;
+    overflow: auto;
+
+    .dance {
+        width: fit-content;
+        min-width: 300px;
+
+    }
+    .dance + .dance {
+        margin-left: 20px;
+    }
+
+}

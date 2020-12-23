@@ -1,0 +1,21 @@
+$orange-color: darkorange;
+
+.video {
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    background-color: $orange-color;
+    text-decoration: none;
+    display: block;
+    color: white;
+
+    &:hover {
+        background-color: cornflowerblue;
+    }
+}
+
+h3 {
+    border-bottom: 1px solid lightgray;
+    padding-bottom: 4px;
+    color: $orange-color;
+}

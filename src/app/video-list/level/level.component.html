@@ -1,0 +1,5 @@
+<h2>{{level.title}}</h2>
+
+<div class="dance-list">
+    <app-dance *ngFor='let dance of level.dances' [dance]='dance' class="dance"></app-dance>
+</div>
