@@ -1,9 +1,19 @@
 @import "../../../styles/variables";
 
+$text-color: white;
+$margin: 5px;
+$padding: 10px;
+
 :host {
   background-color: $nagel-color;
-  transition: background-color 200ms ease-in-out;
-  color: white;
+  transition: background-color $nagel-transition-animation;
+  color: $text-color;
+  padding: $padding;
+  border: none;
+  margin: {
+    top: $margin;
+    bottom: $margin;
+  }
 
   &:hover {
     background-color: $nagel-hover-color;

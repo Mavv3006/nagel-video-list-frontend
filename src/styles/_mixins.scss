@@ -1,0 +1,7 @@
+@import './variables';
+
+@mixin bottom-divider {
+  border: {
+    bottom: 1px solid $nagel-divider-color;
+  }
+}

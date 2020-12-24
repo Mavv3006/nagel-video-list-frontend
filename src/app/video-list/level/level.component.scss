@@ -1,5 +1,8 @@
 @import '../../../styles/variables';
 
+$dance-min-width: 300px;
+$dance-inner-margin: 20px;
+
 h2 {
     color: $nagel-color;
     margin-bottom: 0;
@@ -14,11 +17,10 @@ h2 {
 
     .dance {
         width: fit-content;
-        min-width: 300px;
+        min-width: $dance-min-width;
 
     }
     .dance + .dance {
-        margin-left: 20px;
+        margin-left: $dance-inner-margin;
     }
-
 }

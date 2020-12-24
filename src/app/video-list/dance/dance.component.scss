@@ -1,17 +1,19 @@
-@import '../../../styles/variables';
+@import "../../../styles/variables";
+@import "../../../styles/mixins";
+
+$header-bottom-padding: 4px;
 
 .video {
-  padding: 10px;
-  margin-top: 5px;
-  margin-bottom: 5px;
   display: block;
-  border: none;
   width: 100%;
   text-align: left;
 }
 
 h3 {
-  border-bottom: 1px solid $nagel-divider-color;
-  padding-bottom: 4px;
+  @include bottom-divider;
+
+  padding: {
+    bottom: $header-bottom-padding;
+  }
   color: $nagel-color;
 }
