@@ -1,21 +1,19 @@
-$orange-color: darkorange;
+@import "../../../styles/variables";
+@import "../../../styles/mixins";
+
+$header-bottom-padding: 4px;
 
 .video {
-    padding: 10px;
-    margin-top: 5px;
-    margin-bottom: 5px;
-    background-color: $orange-color;
-    text-decoration: none;
-    display: block;
-    color: white;
-
-    &:hover {
-        background-color: cornflowerblue;
-    }
+  display: block;
+  width: 100%;
+  text-align: left;
 }
 
 h3 {
-    border-bottom: 1px solid lightgray;
-    padding-bottom: 4px;
-    color: $orange-color;
+  @include bottom-divider;
+
+  padding: {
+    bottom: $header-bottom-padding;
+  }
+  color: $nagel-color;
 }
