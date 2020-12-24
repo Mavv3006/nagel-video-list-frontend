@@ -1,0 +1,11 @@
+@import "../../../styles/variables";
+
+:host {
+  background-color: $nagel-color;
+  transition: background-color 200ms ease-in-out;
+  color: white;
+
+  &:hover {
+    background-color: $nagel-hover-color;
+  }
+}

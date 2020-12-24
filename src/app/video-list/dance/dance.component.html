@@ -1,5 +1,7 @@
-<h3>{{dance.name}}</h3>
+<h3>{{ dance.name }}</h3>
 
 <div class="video-list">
-    <a *ngFor='let video of dance.videos' href="{{video.link}}" class="video">{{video.title}}</a>
+  <button *ngFor="let video of dance.videos" class='video' nagelButton>
+    {{ video.title }}
+  </button>
 </div>
