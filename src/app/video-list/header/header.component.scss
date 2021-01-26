@@ -1,4 +1,9 @@
-@import '../../../styles/variables';
+@import "../../../styles/variables";
+
+:host {
+  display: block;
+  margin: $spacing-s $spacing-m;
+}
 
 h1 {
   color: $nagel-color;
@@ -9,4 +14,3 @@ button {
   border: none;
   padding: 8px;
 }
-

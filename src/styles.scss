@@ -1,4 +1,9 @@
 /* You can add global styles to this file, and also import other style files */
+* {
+  padding: 0;
+  margin: 0;
+}
+
 html,
 body {
   font-family: "Roboto", sans-serif;
@@ -6,22 +11,23 @@ body {
 }
 
 body {
-  // TODO: change styling for horizontal scroll bar
+  background-image: url("assets/background-image.jpeg");
+  background-repeat: no-repeat;
 
   ::-webkit-scrollbar {
     height: 10px;
   }
   ::-webkit-scrollbar-thumb:horizontal {
-    background: darkgray;
+    background: lightgray;
     border-radius: 15px;
     transition: background-color 200ms ease-in-out;
 
     &:hover {
-      background-color: lightgray;
+      background-color: darkgray;
     }
 
     &:active {
-      background-color: lightblue;
+      background-color: gray;
     }
   }
 }
